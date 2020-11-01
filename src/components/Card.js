@@ -27,6 +27,7 @@ const CompanyInfo = styled.div`
 
 const MobileSeparator = styled.hr`
   color: transparent;
+  border: none;
   border-bottom: 2px solid #eee;
   padding-top: 20px;
 

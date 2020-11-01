@@ -44,7 +44,6 @@ const CompanyLogo = styled.img`
 `;
 
 export const Company = (props) => {
-  console.log(">>>>", props.logo);
   return (
     <Container>
       <CompanyLogo
