@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ListStyled = styled.ul`
+const StyledList = styled.ul`
   align-items: center;
   display: flex;
   color: hsl(180, 8%, 52%);
@@ -35,9 +35,9 @@ const Featured = styled.li`
 
 export const Features = (props) => {
   return (
-    <ListStyled>
+    <StyledList>
       {props.new ? <New>New!</New> : ""}
       {props.featured ? <Featured>Featured</Featured> : ""}
-    </ListStyled>
+    </StyledList>
   );
 };

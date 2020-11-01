@@ -14,7 +14,7 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const ListStyled = styled.ul`
+const StyledList = styled.ul`
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +64,7 @@ export const FilterMenu = (props) => {
 
   return (
     <Container>
-      <ListStyled>
+      <StyledList>
         {filters.map((tag, i) => (
           <Filter key={i}>
             {tag}
@@ -74,7 +74,7 @@ export const FilterMenu = (props) => {
             </Remove>
           </Filter>
         ))}
-      </ListStyled>
+      </StyledList>
 
       <Clear onClick={() => clearFilters()}>Clear</Clear>
     </Container>

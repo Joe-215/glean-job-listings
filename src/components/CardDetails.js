@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ListStyled = styled.ul`
+const StyledList = styled.ul`
   display: flex;
   color: hsl(180, 8%, 52%);
   font-size: 12px;
@@ -22,10 +22,10 @@ const ListItem = styled.li`
 
 export const Details = (props) => {
   return (
-    <ListStyled>
+    <StyledList>
       <ListItem>{props.postedAt}</ListItem>
       <ListItem>{props.position}</ListItem>
       <ListItem>{props.location}</ListItem>
-    </ListStyled>
+    </StyledList>
   );
 };
