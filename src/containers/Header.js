@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import MobileBg from "../data/images/bg-header-mobile.svg";
-import DesktopBg from "../data/images/bg-header-desktop.svg";
 
 const StyledHeader = styled.header`
   background-color: hsl(180, 29%, 50%);
-  background-image: url(${MobileBg});
+  background-image: url(${process.env.PUBLIC_URL +
+  "images/bg-header-mobile.svg"});
   background-size: cover;
   background-repeat: no-repeat;
   height: 155px;
@@ -13,7 +12,8 @@ const StyledHeader = styled.header`
   padding: 0;
 
   @media (min-width: 600px) {
-    background-image: url(${DesktopBg});
+    background-image: url(${process.env.PUBLIC_URL +
+    "images/bg-header-desktop.svg"});
   }
 `;
 
