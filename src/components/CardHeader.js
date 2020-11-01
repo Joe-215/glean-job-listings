@@ -48,7 +48,7 @@ export const Company = (props) => {
   return (
     <Container>
       <CompanyLogo
-        src={require(`../data/images/${props.logo}`)}
+        src={process.env.PUBLIC_URL + "images/" + props.logo}
         alt={props.company}
       />
 
