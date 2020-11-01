@@ -37,7 +37,7 @@ export const Features = (props) => {
   return (
     <ListStyled>
       {props.new ? <New>New!</New> : ""}
-      <Featured>Featured</Featured>
+      {props.featured ? <Featured>Featured</Featured> : ""}
     </ListStyled>
   );
 };
