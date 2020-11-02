@@ -15,7 +15,7 @@ const StyledCard = styled.div`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 2.5% auto;
+    margin: 2% auto;
     max-width: 1000px;
   }
 `;
